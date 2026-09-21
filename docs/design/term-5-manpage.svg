@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="ui-monospace, Menlo, monospace">
+<rect width="1280" height="800" fill="#0B0B09"/>
+<text x="72" y="60" font-size="13" fill="#6E6A5A">KANTA(1)</text>
+<text x="560" y="60" font-size="13" fill="#6E6A5A">Portfolio Manual</text>
+<text x="1110" y="60" font-size="13" fill="#6E6A5A">KANTA(1)</text>
+<line x1="72" y1="80" x2="1208" y2="80" stroke="#1C1B16"/>
+<text x="72" y="130" font-size="14" fill="#FBBF24" font-weight="700">NAME</text>
+<text x="136" y="166" font-size="15" fill="#E8E5D8">kanta &#8212; LLM application engineer (Python &#215; TypeScript)</text>
+<text x="72" y="222" font-size="14" fill="#FBBF24" font-weight="700">SYNOPSIS</text>
+<text x="136" y="258" font-size="15" fill="#E8E5D8">kanta [--llm] [--backend] [--frontend] &lt;business-problem&gt;</text>
+<text x="72" y="314" font-size="14" fill="#FBBF24" font-weight="700">DESCRIPTION</text>
+<text x="136" y="350" font-size="15" fill="#9A9483">生成AIを実務で使えるプロダクトに落とし込むことを専門とする。</text>
+<text x="136" y="378" font-size="15" fill="#9A9483">プロンプト設計・精度評価から、それを前提としたUX設計・実装までを一貫して行う。</text>
+<text x="72" y="434" font-size="14" fill="#FBBF24" font-weight="700">WORKS</text>
+<text x="136" y="472" font-size="15" fill="#FDE68A">doc-extract-agent</text>
+<text x="200" y="504" font-size="14" fill="#9A9483">契約書PDFから条項を構造化抽出するLLMエージェント。</text>
+<text x="200" y="530" font-size="14" fill="#6E6A5A">抽出精度 92% / 個人開発 / Python, GPT</text>
+<text x="200" y="556" font-size="14" fill="#60A5FA">&#8594; README</text><text x="330" y="556" font-size="14" fill="#60A5FA">&#8594; Demo</text>
+<text x="136" y="608" font-size="15" fill="#FDE68A">rag-eval-harness</text>
+<text x="200" y="640" font-size="14" fill="#9A9483">RAGの回答品質を自動評価するCIパイプライン。</text>
+<text x="200" y="666" font-size="14" fill="#6E6A5A">検証時間 1/8 / 3人チーム / Python, GitHub Actions</text>
+<text x="200" y="692" font-size="14" fill="#60A5FA">&#8594; README</text>
+<text x="72" y="744" font-size="14" fill="#FBBF24" font-weight="700">SEE ALSO</text>
+<text x="136" y="778" font-size="14" fill="#60A5FA">github(1)　about(7)　contact(1)</text>
+<rect x="1080" y="760" width="128" height="26" rx="4" fill="#161510"/><text x="1096" y="778" font-size="12" fill="#6E6A5A">:q to exit</text>
+</svg>

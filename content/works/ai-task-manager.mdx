@@ -1,0 +1,24 @@
+---
+title: ai-task-manager
+summary: 通常UIと自然言語のどちらからでも操作できるタスク・スケジュール管理アプリ。LLMに専用の処理経路を作らず、UIと同じService Layerを通させることでデータの食い違いを防いでいる。
+role: 個人開発
+tags:
+  - LLM
+  - FastAPI
+  - Next.js
+metrics:
+  - label: LLM応答
+    value: 102秒 → 19秒
+  - label: テスト
+    value: 242件
+screenshots:
+  - src: /screenshots/ai-task-manager.png
+    alt: ai-task-manager の画面。左にタスク一覧、右に週表示のカレンダー、下部のAIアシスタントで「明日2時間空いている時間を探して」に対し空き時間帯が返っている
+    caption: 「明日2時間空いている時間を探して」に、Backend が計算した空き時間を返しているところ
+links:
+  readme: https://github.com/kanta0414/ai-task-manager#readme
+order: 1
+---
+
+LLM が何を答えても、Tool を経由しない限りデータは変わらない構成にしています。削除や自動配置は承認を挟み、
+ローカル LLM（qwen3:1.7b）と Claude API を `.env` の1行で切り替えられます。

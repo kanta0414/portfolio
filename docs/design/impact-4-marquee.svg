@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Inter, -apple-system, sans-serif">
+<defs><radialGradient id="rg" cx="0.5" cy="0.34" r="0.55"><stop offset="0" stop-color="#0D3B34" stop-opacity="0.9"/><stop offset="1" stop-color="#050807" stop-opacity="0"/></radialGradient></defs>
+<rect width="1280" height="800" fill="#050807"/><rect width="1280" height="800" fill="url(#rg)"/>
+<text x="64" y="48" font-size="14" fill="#E4F0EC" font-weight="600">kanta</text>
+<rect x="1108" y="28" width="108" height="30" rx="15" fill="#0B1F1B" stroke="#1B3A33"/><text x="1126" y="48" font-size="12" fill="#34D399">Available</text>
+<text x="640" y="250" font-size="90" font-weight="800" fill="#EAF6F2" text-anchor="middle" letter-spacing="-3">AIを業務に</text>
+<text x="640" y="348" font-size="90" font-weight="800" fill="#34D399" text-anchor="middle" letter-spacing="-3">溶け込ませる</text>
+<text x="640" y="404" font-size="16" fill="#7E9A93" text-anchor="middle">LLM Application Engineer &#183; Python &#215; TypeScript</text>
+<rect x="0" y="470" width="1280" height="54" fill="#081310"/>
+<line x1="0" y1="470" x2="1280" y2="470" stroke="#12251F"/><line x1="0" y1="524" x2="1280" y2="524" stroke="#12251F"/>
+<text x="-20" y="504" font-size="17" fill="#2C4A42" letter-spacing="3">PROMPT DESIGN &#9670; EVALUATION &#9670; RAG &#9670; AGENT &#9670; FASTAPI &#9670; NEXT.JS &#9670; AZURE &#9670; PROMPT DESIGN &#9670; EVALUATION &#9670; RAG</text>
+<rect x="64" y="580" width="560" height="176" rx="14" fill="#0A1512" stroke="#16302A"/>
+<text x="104" y="626" font-size="12" fill="#34D399" letter-spacing="1.5">01 FEATURED</text>
+<text x="104" y="676" font-size="28" fill="#EAF6F2" font-weight="700">doc-extract-agent</text>
+<text x="104" y="708" font-size="14" fill="#7E9A93">契約書PDFの条項を構造化抽出</text>
+<text x="104" y="736" font-size="14" fill="#34D399" font-weight="600">抽出精度 92%</text>
+<rect x="656" y="580" width="560" height="176" rx="14" fill="#0A1512" stroke="#16302A"/>
+<text x="696" y="626" font-size="12" fill="#2C4A42" letter-spacing="1.5">02</text>
+<text x="696" y="676" font-size="28" fill="#EAF6F2" font-weight="700">rag-eval-harness</text>
+<text x="696" y="708" font-size="14" fill="#7E9A93">RAG回答品質の自動評価CI</text>
+<text x="696" y="736" font-size="14" fill="#34D399" font-weight="600">検証時間 1/8</text>
+</svg>

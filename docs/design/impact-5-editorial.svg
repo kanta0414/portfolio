@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Georgia, 'Times New Roman', serif">
+<rect width="1280" height="800" fill="#0B0B0C"/>
+<line x1="0" y1="72" x2="1280" y2="72" stroke="#232326"/>
+<text x="72" y="46" font-size="15" fill="#EDEDEE" letter-spacing="4">K A N T A</text>
+<text x="1040" y="46" font-size="12" fill="#6C6C74" font-family="Inter, sans-serif" letter-spacing="2">WORKS / ABOUT / GITHUB</text>
+<text x="72" y="190" font-size="13" fill="#B45309" font-family="Inter, sans-serif" letter-spacing="3">PORTFOLIO &#8212; 2026</text>
+<text x="72" y="300" font-size="86" fill="#F3F3F4" letter-spacing="-2">Building the</text>
+<text x="72" y="392" font-size="86" fill="#F3F3F4" font-style="italic" letter-spacing="-2">interface for AI.</text>
+<line x1="72" y1="440" x2="1208" y2="440" stroke="#232326"/>
+<text x="72" y="486" font-size="16" fill="#8C8C96" font-family="Inter, sans-serif">LLMを業務に接続する</text>
+<text x="72" y="512" font-size="16" fill="#8C8C96" font-family="Inter, sans-serif">アプリケーションを、設計から</text>
+<text x="72" y="538" font-size="16" fill="#8C8C96" font-family="Inter, sans-serif">実装まで一人で作っています。</text>
+<line x1="400" y1="460" x2="400" y2="760" stroke="#1C1C1F"/>
+<text x="440" y="486" font-size="12" fill="#5C5C66" font-family="Inter, sans-serif" letter-spacing="2">01</text>
+<text x="440" y="534" font-size="38" fill="#F3F3F4">doc-extract-agent</text>
+<text x="440" y="568" font-size="15" fill="#8C8C96" font-family="Inter, sans-serif">契約書PDFから条項を構造化抽出するLLMエージェント</text>
+<text x="440" y="598" font-size="14" fill="#B45309" font-family="Inter, sans-serif">抽出精度 92% &#8212; 個人開発</text>
+<line x1="440" y1="636" x2="1208" y2="636" stroke="#1C1C1F"/>
+<text x="440" y="672" font-size="12" fill="#5C5C66" font-family="Inter, sans-serif" letter-spacing="2">02</text>
+<text x="440" y="720" font-size="38" fill="#F3F3F4">rag-eval-harness</text>
+<text x="440" y="754" font-size="15" fill="#8C8C96" font-family="Inter, sans-serif">RAGの回答品質を自動評価するCIパイプライン &#8212; 検証時間 1/8</text>
+</svg>

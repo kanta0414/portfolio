@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="ui-monospace, Menlo, monospace">
+<rect width="1280" height="800" fill="#0D1117"/>
+<rect x="0" y="0" width="1280" height="40" fill="#0A0E13"/><line x1="0" y1="40" x2="1280" y2="40" stroke="#1C2530"/>
+<circle cx="24" cy="20" r="6" fill="#FF5F57"/><circle cx="44" cy="20" r="6" fill="#FEBC2E"/><circle cx="64" cy="20" r="6" fill="#28C840"/>
+<text x="580" y="25" font-size="12" fill="#57636F">kanta — portfolio</text>
+<rect x="0" y="40" width="280" height="760" fill="#0A0E13"/><line x1="280" y1="40" x2="280" y2="800" stroke="#1C2530"/>
+<text x="24" y="76" font-size="11" fill="#4A5561" letter-spacing="1.2">EXPLORER</text>
+<text x="24" y="116" font-size="13" fill="#A8B3BF">&#9662; kanta/</text>
+<text x="44" y="150" font-size="13" fill="#7EE787">&#9662; works/</text>
+<rect x="36" y="164" width="228" height="28" rx="5" fill="#152030"/>
+<text x="64" y="184" font-size="13" fill="#E6EDF3">doc-extract-agent.md</text>
+<text x="64" y="218" font-size="13" fill="#8B949E">rag-eval-harness.md</text>
+<text x="64" y="252" font-size="13" fill="#8B949E">portfolio.md</text>
+<text x="44" y="292" font-size="13" fill="#A8B3BF">about.md</text>
+<text x="44" y="326" font-size="13" fill="#A8B3BF">contact.md</text>
+<line x1="24" y1="360" x2="256" y2="360" stroke="#1C2530"/>
+<text x="24" y="396" font-size="11" fill="#4A5561" letter-spacing="1.2">LINKS</text>
+<text x="24" y="428" font-size="13" fill="#58A6FF">github.com/kanta</text>
+<text x="24" y="456" font-size="13" fill="#58A6FF">mail</text>
+<rect x="280" y="40" width="1000" height="36" fill="#0D1117"/><line x1="280" y1="76" x2="1280" y2="76" stroke="#1C2530"/>
+<rect x="280" y="40" width="230" height="36" fill="#0D1117"/><rect x="280" y="40" width="230" height="2" fill="#F78166"/>
+<text x="304" y="64" font-size="12" fill="#E6EDF3">doc-extract-agent.md</text>
+<text x="536" y="64" font-size="12" fill="#57636F">rag-eval-harness.md</text>
+<text x="312" y="140" font-size="12" fill="#3D4753">1</text><text x="352" y="140" font-size="26" fill="#E6EDF3" font-weight="600"># doc-extract-agent</text>
+<text x="312" y="180" font-size="12" fill="#3D4753">2</text>
+<text x="312" y="216" font-size="12" fill="#3D4753">3</text><text x="352" y="216" font-size="15" fill="#8B949E">契約書PDFから条項を構造化抽出するLLMエージェント。</text>
+<text x="312" y="252" font-size="12" fill="#3D4753">4</text>
+<text x="312" y="288" font-size="12" fill="#3D4753">5</text><text x="352" y="288" font-size="15" fill="#7EE787">**抽出精度 92%**</text><text x="520" y="288" font-size="15" fill="#8B949E"> · 個人開発 · Python / GPT</text>
+<text x="312" y="324" font-size="12" fill="#3D4753">6</text>
+<rect x="352" y="348" width="800" height="300" rx="8" fill="#0A0E13" stroke="#1C2530"/>
+<rect x="353" y="349" width="798" height="32" rx="7" fill="#11161D"/>
+<text x="372" y="370" font-size="11" fill="#57636F">preview.png</text>
+<rect x="392" y="420" width="200" height="12" rx="6" fill="#1E2833"/>
+<rect x="392" y="452" width="360" height="12" rx="6" fill="#18212B"/>
+<rect x="392" y="484" width="300" height="12" rx="6" fill="#18212B"/>
+<rect x="392" y="536" width="720" height="1" fill="#1C2530"/>
+<rect x="392" y="560" width="140" height="12" rx="6" fill="#1F4028"/>
+<text x="312" y="700" font-size="12" fill="#3D4753">7</text><text x="352" y="700" font-size="15" fill="#58A6FF">[&#8594; READMEを読む]</text><text x="560" y="700" font-size="15" fill="#58A6FF">[&#8594; デモ]</text>
+<rect x="0" y="774" width="1280" height="26" fill="#11161D"/>
+<text x="24" y="791" font-size="11" fill="#57636F">main*    3 works    Markdown    Ln 5, Col 1</text>
+</svg>

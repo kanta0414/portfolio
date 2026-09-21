@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Inter, -apple-system, sans-serif">
+<defs><linearGradient id="th" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17303A"/><stop offset="1" stop-color="#0C1418"/></linearGradient></defs>
+<rect width="1280" height="800" fill="#080B0D"/><rect width="480" height="800" fill="#0C1013"/>
+<line x1="480" y1="0" x2="480" y2="800" stroke="#182126"/>
+<circle cx="128" cy="140" r="44" fill="#132025" stroke="#1E3038"/><text x="112" y="152" font-size="26" fill="#2DD4BF">K</text>
+<text x="64" y="252" font-size="44" font-weight="700" fill="#EAF2F4" letter-spacing="-1.5">Kanta</text>
+<text x="64" y="292" font-size="15" fill="#2DD4BF">LLM Application Engineer</text>
+<text x="64" y="344" font-size="14" fill="#7E9099">生成AIを業務に溶け込ませる</text>
+<text x="64" y="370" font-size="14" fill="#7E9099">プロダクトを設計・実装しています。</text>
+<line x1="64" y1="414" x2="416" y2="414" stroke="#182126"/>
+<text x="64" y="450" font-size="12" fill="#4E606A" letter-spacing="1.5">STACK</text>
+<text x="64" y="482" font-size="14" fill="#B6C6CC">Python · TypeScript · React</text>
+<text x="64" y="508" font-size="14" fill="#B6C6CC">FastAPI · Next.js · Azure</text>
+<text x="64" y="700" font-size="14" fill="#2DD4BF">GitHub &#8599;</text><text x="168" y="700" font-size="14" fill="#4E606A">Email &#8599;</text>
+<text x="544" y="92" font-size="12" fill="#4E606A" letter-spacing="1.5">WORKS &#8212; 03</text>
+<rect x="544" y="124" width="672" height="292" rx="12" fill="#0C1013" stroke="#1A242A"/>
+<rect x="545" y="125" width="670" height="160" rx="11" fill="url(#th)"/>
+<text x="580" y="336" font-size="24" fill="#EAF2F4" font-weight="700">doc-extract-agent</text>
+<text x="580" y="368" font-size="14" fill="#7E9099">契約書PDFから条項を構造化抽出するLLMエージェント</text>
+<text x="580" y="394" font-size="13" fill="#2DD4BF" font-weight="600">抽出精度 92%</text><text x="700" y="394" font-size="13" fill="#4E606A">個人開発 · Python</text>
+<rect x="544" y="444" width="672" height="292" rx="12" fill="#0C1013" stroke="#1A242A"/>
+<rect x="545" y="445" width="670" height="160" rx="11" fill="url(#th)" opacity="0.6"/>
+<text x="580" y="656" font-size="24" fill="#EAF2F4" font-weight="700">rag-eval-harness</text>
+<text x="580" y="688" font-size="14" fill="#7E9099">RAGの回答品質を自動評価するCIパイプライン</text>
+<text x="580" y="714" font-size="13" fill="#2DD4BF" font-weight="600">検証時間 1/8</text>
+</svg>

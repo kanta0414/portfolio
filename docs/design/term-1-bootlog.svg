@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+<rect width="1280" height="800" fill="#07090A"/>
+<text x="72" y="70" font-size="13" fill="#3F4B4F">[ 0.001 ]</text><text x="180" y="70" font-size="13" fill="#5E6E73">booting kanta.dev ...</text>
+<text x="72" y="100" font-size="13" fill="#3F4B4F">[ 0.114 ]</text><text x="180" y="100" font-size="13" fill="#5E6E73">loading profile ........... </text><text x="520" y="100" font-size="13" fill="#38BDF8">OK</text>
+<text x="72" y="130" font-size="13" fill="#3F4B4F">[ 0.240 ]</text><text x="180" y="130" font-size="13" fill="#5E6E73">mounting /works (3 items) . </text><text x="520" y="130" font-size="13" fill="#38BDF8">OK</text>
+<text x="72" y="160" font-size="13" fill="#3F4B4F">[ 0.388 ]</text><text x="180" y="160" font-size="13" fill="#5E6E73">init llm runtime .......... </text><text x="520" y="160" font-size="13" fill="#38BDF8">OK</text>
+<text x="72" y="190" font-size="13" fill="#3F4B4F">[ 0.402 ]</text><text x="180" y="190" font-size="13" fill="#5E6E73">ready.</text>
+<line x1="72" y1="228" x2="1208" y2="228" stroke="#141A1C"/>
+<text x="72" y="320" font-size="72" fill="#E6F1F5" font-weight="600" letter-spacing="-2">KANTA</text>
+<text x="72" y="368" font-size="17" fill="#38BDF8">&#187; LLM Application Engineer</text>
+<text x="72" y="400" font-size="15" fill="#5E6E73">Python &#215; TypeScript / 生成AIを業務に溶け込ませる</text>
+<line x1="72" y1="452" x2="1208" y2="452" stroke="#141A1C"/>
+<text x="72" y="502" font-size="13" fill="#3F4B4F">MODULE</text><text x="360" y="502" font-size="13" fill="#3F4B4F">DESCRIPTION</text><text x="900" y="502" font-size="13" fill="#3F4B4F">STATUS</text><text x="1090" y="502" font-size="13" fill="#3F4B4F">RESULT</text>
+<line x1="72" y1="520" x2="1208" y2="520" stroke="#141A1C"/>
+<circle cx="80" cy="558" r="4" fill="#38BDF8"/>
+<text x="100" y="564" font-size="15" fill="#E6F1F5">doc-extract-agent</text>
+<text x="360" y="564" font-size="14" fill="#7E8E93">契約書PDFの条項を構造化抽出</text>
+<text x="900" y="564" font-size="13" fill="#38BDF8">RUNNING</text><text x="1090" y="564" font-size="14" fill="#E6F1F5">92%</text>
+<circle cx="80" cy="618" r="4" fill="#38BDF8"/>
+<text x="100" y="624" font-size="15" fill="#E6F1F5">rag-eval-harness</text>
+<text x="360" y="624" font-size="14" fill="#7E8E93">RAG回答品質の自動評価CI</text>
+<text x="900" y="624" font-size="13" fill="#38BDF8">RUNNING</text><text x="1090" y="624" font-size="14" fill="#E6F1F5">1/8 time</text>
+<circle cx="80" cy="678" r="4" fill="#475569"/>
+<text x="100" y="684" font-size="15" fill="#E6F1F5">portfolio</text>
+<text x="360" y="684" font-size="14" fill="#7E8E93">このサイト / Next.js + MDX</text>
+<text x="900" y="684" font-size="13" fill="#64748B">BUILDING</text><text x="1090" y="684" font-size="14" fill="#E6F1F5">LH 98</text>
+<line x1="72" y1="718" x2="1208" y2="718" stroke="#141A1C"/>
+<text x="72" y="762" font-size="14" fill="#38BDF8">kanta@dev</text><text x="180" y="762" font-size="14" fill="#5E6E73">:~$</text><rect x="222" y="750" width="9" height="17" fill="#38BDF8"/>
+</svg>

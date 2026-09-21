@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="ui-monospace, Menlo, monospace">
+<rect width="1280" height="800" fill="#0A0A0C"/>
+<text x="72" y="140" font-size="58" fill="#26262E" font-weight="600" letter-spacing="-2" font-family="Inter, sans-serif">Kanta &#8212; LLM Engineer</text>
+<text x="72" y="196" font-size="18" fill="#1E1E25" font-family="Inter, sans-serif">Python &#215; TypeScript, 生成AIを業務に溶け込ませる</text>
+<rect x="0" y="0" width="1280" height="800" fill="#050506" opacity="0.72"/>
+<rect x="288" y="150" width="704" height="500" rx="16" fill="#111116" stroke="#2A2A33"/>
+<rect x="288" y="150" width="704" height="64" rx="16" fill="#16161C"/><rect x="288" y="198" width="704" height="16" fill="#16161C"/>
+<line x1="288" y1="214" x2="992" y2="214" stroke="#26262E"/>
+<text x="320" y="190" font-size="15" fill="#5A5A66">&#8250;</text>
+<text x="348" y="190" font-size="15" fill="#E8E8F0">doc</text><rect x="386" y="177" width="8" height="16" fill="#F472B6"/>
+<rect x="912" y="170" width="52" height="24" rx="5" fill="#1D1D25"/><text x="922" y="187" font-size="11" fill="#6E6E7E">esc</text>
+<text x="320" y="252" font-size="11" fill="#5A5A66" letter-spacing="1.5">WORKS</text>
+<rect x="304" y="268" width="672" height="56" rx="8" fill="#1B1B22"/>
+<rect x="304" y="268" width="3" height="56" fill="#F472B6"/>
+<text x="332" y="294" font-size="15" fill="#F2F2F8">doc-extract-agent</text>
+<text x="332" y="314" font-size="12" fill="#7A7A8A">契約書PDFの条項を構造化抽出 &#183; 精度 92%</text>
+<text x="930" y="302" font-size="12" fill="#5A5A66">&#8629;</text>
+<text x="332" y="368" font-size="15" fill="#C8C8D6">rag-eval-harness</text>
+<text x="332" y="388" font-size="12" fill="#5A5A66">RAG回答品質の自動評価CI &#183; 検証時間 1/8</text>
+<text x="332" y="442" font-size="15" fill="#C8C8D6">portfolio</text>
+<text x="332" y="462" font-size="12" fill="#5A5A66">このサイト &#183; Next.js + MDX</text>
+<line x1="304" y1="498" x2="976" y2="498" stroke="#22222A"/>
+<text x="320" y="530" font-size="11" fill="#5A5A66" letter-spacing="1.5">LINKS</text>
+<text x="332" y="562" font-size="15" fill="#C8C8D6">GitHub</text><text x="332" y="600" font-size="15" fill="#C8C8D6">About &#183; 経歴</text>
+<line x1="288" y1="624" x2="992" y2="624" stroke="#22222A"/>
+<text x="320" y="646" font-size="11" fill="#4A4A56">&#8593;&#8595; 選択　&#8629; 開く　&#8984;K いつでも呼び出し</text>
+<rect x="1040" y="724" width="152" height="38" rx="8" fill="#141419" stroke="#2A2A33"/>
+<text x="1060" y="748" font-size="12" fill="#8A8A9A">&#8984; K で検索</text>
+</svg>

@@ -1,0 +1,257 @@
+@import 'tailwindcss';
+
+@source '../';
+
+/* =========================================================================
+   デザイントークン（要件 §7.2 / ダーク固定）
+   色はここだけで定義する。コンポーネント側に生の16進数を書かないこと。
+   ========================================================================= */
+@theme {
+  --color-editor: #0d1117; /* 背景（エディタ） */
+  --color-chrome: #0a0e13; /* 背景（サイドバー / タイトルバー） */
+  --color-line: #1c2530; /* 罫線 */
+  --color-fg: #e6edf3; /* 本文 */
+  --color-muted: #8b949e; /* 副次テキスト */
+  --color-faint: #3d4753; /* 行番号 / 最弱 */
+  --color-link: #58a6ff; /* アクセント（リンク） */
+  --color-num: #7ee787; /* アクセント（数値・強調） */
+  --color-tab: #f78166; /* アクティブタブ下線 */
+  --color-selected: #152030; /* 選択行の背景 */
+  --color-hover: #11161d; /* ホバー行の背景（§7.4） */
+
+  /*
+    モック由来の補助色。
+    モックの値（dim #57636F / label #4A5561）は背景に対して 3.1:1 / 2.5:1 しかなく、
+    要件 §7.6 の「4.5:1 以上」を満たさないため、同じ色相のまま明度だけ上げている。
+    実測: dim = 4.96:1 (on #11161D) / label = 5.01:1 (on #0A0E13)
+  */
+  --color-dim: #7a8797; /* タイトルバー / ステータスバー / 非アクティブタブ */
+  --color-label: #78838f; /* EXPLORER などのセクション見出し */
+  --color-tree: #a8b3bf; /* ツリーのディレクトリ名 */
+
+  /* 信号機ボタン（装飾） */
+  --color-traffic-red: #ff5f57;
+  --color-traffic-yellow: #febc2e;
+  --color-traffic-green: #28c840;
+
+  /* 等幅はシステムフォント。Webフォントを足さないぶん LCP に効く（要件 §7.3 / 非機能要件） */
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  /*
+    本文（要件 §7.3: サンセリフ）。
+    要件は「Inter + Noto Sans JP」だが、Noto Sans JP を Web フォントとして配信すると
+    unicode-range 分割の @font-face だけで CSS が 95KB になり、これがレンダーブロックして
+    モバイルの LCP が 4.7秒 / Lighthouse Performance 75 まで落ちた（要件 §5 の Must 違反）。
+    §7.3 が等幅を避ける理由は「等幅の日本語は可読性が落ちるため」であり、
+    和文プロポーショナル・サンセリフであれば満たせる。そこで和文は端末のシステムフォントに委ね、
+    Noto Sans JP がインストール済みの環境（Android / Linux など）ではそれが使われるよう先頭に置く。
+    結果: Performance 75 → 97、LCP 4.7秒 → 1.8秒。
+  */
+  --font-sans:
+    var(--font-inter, ui-sans-serif), 'Noto Sans JP', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+    'Yu Gothic UI', 'Yu Gothic', Meiryo, system-ui, sans-serif;
+
+  /* IDEシェルの寸法 */
+  --spacing-titlebar: 40px;
+  --spacing-tabbar: 36px;
+  --spacing-statusbar: 26px;
+  --spacing-sidebar: 280px;
+}
+
+/* =========================================================================
+   ベース
+   ========================================================================= */
+@layer base {
+  :root {
+    color-scheme: dark; /* ダーク固定（要件 F-12） */
+  }
+
+  html {
+    background-color: var(--color-editor);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-editor);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* フォーカスリングは消さない（要件 §7.6） */
+  :focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-selected);
+    color: var(--color-fg);
+  }
+
+  /* スクロールバーもIDEに寄せる（装飾） */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e2833;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2b3846;
+  }
+}
+
+/* =========================================================================
+   エディタ領域：行番号つきの本文（要件 L-04）
+   行番号は CSS counter で描画し、実体は aria-hidden な <span>。
+   スクリーンリーダーが数字を読み上げないようにする（要件 §7.6）。
+   ========================================================================= */
+.editor-doc {
+  counter-reset: editor-line;
+}
+
+.editor-row {
+  counter-increment: editor-line;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  align-items: start;
+}
+
+.editor-gutter {
+  user-select: none;
+  padding-top: 0.15em;
+  padding-right: 1.25rem;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.9;
+  color: var(--color-faint);
+}
+
+.editor-gutter::before {
+  content: counter(editor-line);
+}
+
+/* 空行（本文のブロック間に挿入してエディタらしい行送りを作る） */
+.editor-row--blank {
+  height: 1.4rem;
+}
+
+/* =========================================================================
+   768〜1023px：サイドバーは常設のまま、幅とガターを詰めて本文幅を確保する
+   （要件 requirements-sidebar.md §4.1）
+   280px / 72px のまま常設すると 768px で本文カラムが約360pxまで痩せるため。
+   ========================================================================= */
+@media (max-width: 1023px) {
+  :root {
+    --spacing-sidebar: 240px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .editor-row {
+    grid-template-columns: 3rem minmax(0, 1fr);
+  }
+
+  .editor-gutter {
+    padding-right: 0.75rem;
+  }
+}
+
+/* =========================================================================
+   サイドバーの折りたたみ（要件 requirements-sidebar.md §4.2）
+   SidebarToggle がシェルに data-sidebar="collapsed" を付けると畳む。
+   display:none なので、畳んでいる間はツリー内のリンクがタブ順から外れる（T-06）。
+   レイヤー外で属性セレクタを使うため、Tailwind の md:block より優先される。
+   ========================================================================= */
+[data-sidebar='collapsed'] .ide-sidebar {
+  display: none;
+}
+
+/* =========================================================================
+   767px 以下：IDE比喩を放棄する（要件 §7.5）
+   行番号ガターを畳み、通常の1カラム文書として読ませる。
+   ========================================================================= */
+@media (max-width: 767px) {
+  .editor-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .editor-gutter {
+    display: none;
+  }
+  .editor-row--blank {
+    height: 0.75rem;
+  }
+  /* 強調の `**` はエディタ表現の一部なので、比喩を捨てる幅では出さない */
+  .md-marker {
+    display: none;
+  }
+}
+
+/* =========================================================================
+   パネル切替：80ms のフェードのみ（要件 §7.4）
+   ========================================================================= */
+@keyframes panel-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.panel-enter {
+  animation: panel-fade-in 80ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel-enter {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================================
+   Shiki（コードブロック）
+   ========================================================================= */
+.editor-doc pre.shiki {
+  background-color: var(--color-chrome) !important;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+}
+
+/* =========================================================================
+   スキップリンク（キーボード利用者が IDE シェルを飛ばして本文へ）
+   ========================================================================= */
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 50;
+  transform: translateY(-200%);
+  border-radius: 4px;
+  background-color: var(--color-link);
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-chrome);
+  transition: transform 120ms ease-out;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}

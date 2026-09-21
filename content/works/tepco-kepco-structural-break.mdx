@@ -1,0 +1,24 @@
+---
+title: tepco-kepco-structural-break
+summary: 東日本大震災を境に、東京電力・関西電力の株価と市場（TOPIX）の関係が変わったかを検証した分析。マーケットモデルにダミー変数を入れ、構造変化の有無をChow検定で判定した。
+role: 個人開発
+tags:
+  - Python
+  - R
+  - 統計分析
+metrics:
+  - label: 東京電力のβ
+    value: 0.14 → 1.83
+  - label: Chow検定
+    value: p = 0.00005
+screenshots:
+  - src: /screenshots/tepco-kepco-structural-break.png
+    alt: 東京電力と関西電力の月次収益率をTOPIX収益率に対してプロットした散布図。震災前（青）の回帰直線はほぼ水平だが、震災後（赤）は右上がりになっている
+    caption: 震災前（青）と震災後（赤）で回帰直線の傾きが変わっている
+links:
+  readme: https://github.com/kanta0414/tepco-kepco-structural-break#readme
+order: 2
+---
+
+規制に守られて市場とほぼ連動しなかった電力株が、震災を境に通常の株式に近い性質を持つようになった、と読める結果です。
+R と Python の両方で実装し、両者の数値が一致することをテストで確認しています。

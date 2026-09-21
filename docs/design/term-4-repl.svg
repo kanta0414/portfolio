@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="ui-monospace, Menlo, monospace">
+<rect width="1280" height="800" fill="#0C0A10"/>
+<rect x="160" y="48" width="960" height="704" rx="12" fill="#100D16" stroke="#241E30"/>
+<rect x="160" y="48" width="960" height="40" rx="12" fill="#161120"/><rect x="160" y="76" width="960" height="12" fill="#161120"/>
+<line x1="160" y1="88" x2="1120" y2="88" stroke="#241E30"/>
+<circle cx="188" cy="68" r="5" fill="#2E2740"/><circle cx="206" cy="68" r="5" fill="#2E2740"/><circle cx="224" cy="68" r="5" fill="#2E2740"/>
+<text x="580" y="73" font-size="12" fill="#5B5270">kanta — zsh</text>
+<text x="196" y="140" font-size="14" fill="#C084FC">&#10095;</text><text x="224" y="140" font-size="14" fill="#E9E4F2">whoami</text>
+<text x="196" y="178" font-size="14" fill="#8C82A6">Kanta / LLM Application Engineer</text>
+<text x="196" y="206" font-size="14" fill="#8C82A6">生成AIを業務に溶け込ませるプロダクトを、設計から実装まで。</text>
+<text x="196" y="262" font-size="14" fill="#C084FC">&#10095;</text><text x="224" y="262" font-size="14" fill="#E9E4F2">works --list</text>
+<rect x="196" y="286" width="888" height="1" fill="#1E1928"/>
+<text x="196" y="320" font-size="14" fill="#F0ABFC">doc-extract-agent</text>
+<text x="196" y="346" font-size="13" fill="#8C82A6">  契約書PDFから条項を構造化抽出するLLMエージェント</text>
+<text x="196" y="372" font-size="13" fill="#5B5270">  accuracy=</text><text x="316" y="372" font-size="13" fill="#7EE787">92%</text><text x="376" y="372" font-size="13" fill="#5B5270">  role=solo  stack=python,gpt</text>
+<text x="196" y="418" font-size="14" fill="#F0ABFC">rag-eval-harness</text>
+<text x="196" y="444" font-size="13" fill="#8C82A6">  RAGの回答品質を自動評価するCIパイプライン</text>
+<text x="196" y="470" font-size="13" fill="#5B5270">  eval_time=</text><text x="328" y="470" font-size="13" fill="#7EE787">1/8</text><text x="376" y="470" font-size="13" fill="#5B5270">  role=team(3)  stack=python,ci</text>
+<text x="196" y="516" font-size="14" fill="#F0ABFC">portfolio</text>
+<text x="196" y="542" font-size="13" fill="#8C82A6">  このサイト。Next.js + MDX / Vercel</text>
+<rect x="196" y="576" width="888" height="1" fill="#1E1928"/>
+<text x="196" y="614" font-size="14" fill="#C084FC">&#10095;</text><text x="224" y="614" font-size="14" fill="#E9E4F2">open doc-extract-agent</text><rect x="470" y="602" width="9" height="16" fill="#C084FC"/>
+<rect x="196" y="644" width="888" height="76" rx="8" fill="#161120" stroke="#241E30"/>
+<text x="220" y="676" font-size="12" fill="#5B5270">hint: 使えるコマンド</text>
+<text x="220" y="702" font-size="13" fill="#A78BFA">whoami　works --list　open &lt;name&gt;　skills　contact　help</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Inter, -apple-system, sans-serif">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1A1030"/><stop offset="1" stop-color="#08080D"/></linearGradient>
+<linearGradient id="t1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#8B7BE8"/></linearGradient></defs>
+<rect width="1280" height="800" fill="#08080D"/><rect width="1280" height="560" fill="url(#g1)"/>
+<text x="64" y="48" font-size="14" fill="#E7E7EF" font-weight="600">KANTA</text>
+<text x="1090" y="48" font-size="13" fill="#6E6E85">works · about · github</text>
+<text x="64" y="250" font-size="118" font-weight="800" fill="url(#t1)" letter-spacing="-6">LLM &#215; UX</text>
+<text x="64" y="370" font-size="118" font-weight="800" fill="#22243A" letter-spacing="-6">ENGINEER</text>
+<rect x="64" y="424" width="64" height="3" fill="#8B7BE8"/>
+<text x="64" y="472" font-size="17" fill="#9A9AB2">生成AIを、実務で使えるプロダクトに落とし込む。Python / TypeScript</text>
+<text x="64" y="620" font-size="12" fill="#5A5A70" letter-spacing="2">01 &#8212; FEATURED</text>
+<rect x="64" y="644" width="1152" height="112" rx="10" fill="#0E0F1A" stroke="#1E2033"/>
+<rect x="64" y="644" width="4" height="112" fill="#8B7BE8"/>
+<text x="104" y="688" font-size="26" fill="#F0F0F7" font-weight="700">doc-extract-agent</text>
+<text x="104" y="722" font-size="14" fill="#8A8AA0">契約書PDFから条項を構造化抽出するLLMエージェント　·　抽出精度 92%</text>
+<text x="1160" y="708" font-size="24" fill="#8B7BE8">&#8594;</text>
+<text x="64" y="790" font-size="12" fill="#3E3E52">02 &#8212; rag-eval-harness　　03 &#8212; portfolio</text>
+</svg>

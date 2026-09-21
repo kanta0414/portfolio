@@ -1,0 +1,27 @@
+---
+title: portfolio
+summary: いま開いているこのサイト。IDEの画面をそのままUIにして、ファイルツリーから作品を開く構成にした。
+role: 個人開発
+tags:
+  - TypeScript
+  - Next.js
+  - Tailwind
+metrics:
+  - label: Lighthouse
+    value: 90+
+  - label: 作品追加
+    value: MDX 1ファイル
+screenshots:
+  - src: /screenshots/portfolio.png
+    alt: このポートフォリオサイトのIDE風レイアウト。左にファイルツリー、右にMarkdownを開いたエディタ
+    caption: 1024px以上ではフルIDE、767px以下では比喩を捨てて1カラムに切り替わる
+links:
+  readme: https://github.com/kanta0414/portfolio#readme
+  demo: https://kanta-portfolio.vercel.app
+order: 3
+# ▼ kanta0414/portfolio リポジトリがまだ無く README リンクが 404 になるため下書き扱い。
+#   リポジトリを push したら draft を false にすれば公開される。
+draft: true
+---
+
+`content/works/` に MDX を1つ置くだけでツリーに反映されます。ファイル＝作品という構造を、実装のほうにも通しました。
